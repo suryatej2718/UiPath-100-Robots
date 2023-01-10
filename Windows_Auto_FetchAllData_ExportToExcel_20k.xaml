@@ -1,0 +1,218 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Windows_Auto_FetchAllData_ExportToExcel_20k" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1097,2913" sap2010:WorkflowViewState.IdRef="Windows_Auto_FetchAllData_ExportToExcel_20k_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="70">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="47">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Windows_Auto_FetchAllData_ExportToExcel_20k" sap:VirtualizedContainerService.HintSize="678,2848" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="pCode" />
+      <Variable x:TypeArguments="x:Int32" Name="i">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="1" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Sign in" sap:VirtualizedContainerService.HintSize="636,2758" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="c9cc0c71-62c2-47f7-b8c2-5b9ae20174ed" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,2458" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Staff Number'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="560,227" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="c9cc0c71-62c2-47f7-b8c2-5b9ae20174ed" Text="admin" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="90, 38, 100, 20" ElementType="InputBox" FriendlyName="'Password'" FullSelectorArgument="&lt;wnd ctrlname='txtUsername' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='txtUsername' /&gt;" Guid="5da6fa6b-c900-4088-a555-2f4f1f697427" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAYCAYAAAAWPrhgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD1SURBVGhD7ZExCsJAEEVzAY9lFRuvoKCn0yOotZWVSbCzsUguEEIyJigI5uNMwjqk+A8eLMvCwn9Ri9BJCy/pdHwd4jiWNE2lKAoayDzPB5skicwXy36gLMukqiohYWiaZpRlWcr5cu0H6oqTcKDxLdZ1Lbf7g4H+DRrfIgM5gca3yEBOoPEtMpATaHyLDOQEGt8iAzmBxrfIQE6g8TW7OAzkBAqgyUCOoACaDOQICqDJQI6gAJoM5AgKoMlAjqAAmgzkCAqgyUBOoPEt/gwUbU80mMdxbg4fvwPN1vv2EfqMDheMb/EdZ7ba9QPRyQov6SSM5An4RXkDrRfi1wAAAABJRU5ErkJggg==" InformativeScreenshot="bbd8c3f49a49a41adbf17e179a22a6af.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmLogin' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="15, 44, 69, 13" ElementType="Text" FriendlyName="'Staff Number'" FullSelectorArgument="&lt;wnd ctrlname='Label1' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='Label1' check:text='Staff Number' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEkAAAARCAYAAACRroFGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG4SURBVFhH7ZbNbcMwDIU9iKfIrQt4Bi/Qi2fIDF2my3SYAiofIwok/aQ68FUBPlh+/BEl0UIW+ZXJv1BxEqHiJELFSYSKZflYyvG7lCf4Wcr2SXw6PL5fcbvE+HHwq/k3eQZN5lq93zvcje9DxbL7BdQFPS4WgdgHGQdqThxAy3d3kXfj+xCxN9mVIrzPyL/aNum01mVX8o+4G9+HimWTyfYvmVAm9pp9flqILK59kgIWi86xd8+pm2xBfmFMI/peP+FD6sMmY6wbneyos80rtl3eTdevJPnTjn9BRU1gBQCflJ6U2bzPFX8Z497yixxukq8l11U168xVNvEpuTHGAYfrw+er/gOoGFgliXaPJTebvLfTAdkn+3uSDXlabI5jOhuP4qxGBzYn+Peh4gm9gFMRernbKbBCk38g2XDqh5z6KYf37eVm9qyjftOzPetnzqK1qQX3Okk3SbQWk31GRRCb3mdVC7ntxHu5bYxnrsl9brhjdS7vbznGULH9v1EkEboIul3eOBU9/eqDye5uUttoG9fcuFjVt5fbxnhaLYg1e/XpXdy+hg5UnESoOIlQcRKh4qSxlD8vPeepQH8U4QAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="560,227" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="c9cc0c71-62c2-47f7-b8c2-5b9ae20174ed" Text="admin" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="90, 73, 100, 20" ElementType="InputBoxPassword" FriendlyName="'WindowsForms10.EDIT.app…'" FullSelectorArgument="&lt;wnd ctrlname='txtPassword' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='txtPassword' /&gt;" Guid="4e7f2654-2922-4712-92d2-4de04b1c689f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAYCAYAAAAWPrhgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAELSURBVGhD7dm9DkRgEIVhFydxAVwRHZemopCI6FRoFBrB7F9WZMjOZ8VEcU7yJKJYybzlWs8R3NruS7iPz4PjOJSmKbVtCyc0TXNYXdeLOI7Jtu1toDzPaRgGmucZTpim6bBxHBdd11GSJNtAr/qvD2DnxoOZWMfq+56qqkKgq8aPbwKBFMePbwKBFMePbwKBFMePbwKBFMePL1nHQSCF8QASBFIeDyBBIOXxABIEUh4PIEEg5fEAEgRSHg8gQSDl8QASBFIcP76Ex0Ggi8cDSBBIeTyA5FCgsizf9n4IzOwd/Jf1H3VfRVFQlmXbQJ7nURRFFAQB/Mn3/dPCMCTXdbeB4LZ2X8ItWPQAvDVPE5+sWT8AAAAASUVORK5CYII=" InformativeScreenshot="0cd1bf936daaefad65a87470fc807f9f.png" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmLogin' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="15, 80, 53, 13" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;wnd ctrlname='Label2' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='Label2' check:text='Password' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADkAAAARCAYAAABn5wTeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFgSURBVFhH5VTbbcMwENMgnsJ/WUAzeIH+eIbM0GW6TIcpoJKq6J4cKiiKAA3UAIQk6o73kpPwK/8AlpwNlpwNlpwNhryksn+kcg3YXozdM4C5vqeyuLtvGPLs+DOhv8HDigQ2THMN56fBo4pc8FSPM/fmGS+vgcPectTFXs2KjTv2sNkQq/phFcf429sXvwYb8rT7XZEMIkAkg7N2LUBMUoU4LksLzaF2bVLQ4X3XOBQm/9z4zoY6zffI6xaGDEHd3dFpotkxMPec2MIiBtyKpJkg1wx+ZxE475p001Oseo78yEZnD0PeceR01FEXMOtJjbhWEBtFP64s9jzRTj/yIxudPQx5x7EWiXvu63NqdpHXk3ScNOrksOdEqaGmdE+R+pw0/GI+NzbhbgBDnkQjKKrvlTYK0PGtAMcRMcn6bbKQdsfY8Y+n5nDOh2fpwneUa4AlZ4MlZ4MlZ4MlJ0Iqn6iqiVWEydLcAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Sign In'" sap:VirtualizedContainerService.HintSize="560,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c9cc0c71-62c2-47f7-b8c2-5b9ae20174ed" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="66, 105, 75, 23" ElementType="Button" FriendlyName="'Sign In'" FullSelectorArgument="&lt;wnd ctrlname='Button1' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='Button1' check:text='Sign In' /&gt;" Guid="e208f7f6-8d8e-42c6-b40d-2dac253e0204" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAbCAYAAAA9K9JnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHsSURBVGhD7ZmxTgJBEED3D+iVr6DzB66xk+ZCrY1aSGdBsLI9E/wA/kE6TDSRgh+w8BMkSEmjXsaZPfacXRZZOGQJtyYv3MxONpmX2YOsAv8gsDbWZMANazLghpGoHIJodEE0hyCuXwPESSfzYrrSAipAaTePI5hMvyBN09JDHpLBGMQVDtO8QBbUO3A3+LBuUnba/ffsRHJfWoAjqiZOy5cc8jGZfmbTp6+xAOUp01q+5ORO6P2nr7EgyLPiR96RgPNvAS3iTUB0ZqlZF9ob96za1jaMF3kxSouwSRnPRNY21fRey/vv5vZaHhJhc3GCDWKjeZ43jc8xPqtjTVAtrUe9WR6Jbcdd7eNaXwAv8qhB3pQ8wqppXJdyVaNcBheAn6re3Hul+gL4kceoYlN8svJPVbMsr2Iz71pfAO/yCPoCyb8wFjXtKmPV+gJsXV4V33UtPLKqibnJw5x2bNVxc5Wh8q71Bdi6PKLG3nckjqZOa46e2bopV+6zSIbKu9YXwIu8VZCTibJta77ZSXnmZOY/qHcMN3nNYbhVsUA+5K3Kn/IaXWj3R7npwC/Jyzi7Uea+tKByIKePbk7DTXIGeZAXofRvCfLDfRlBVnB8C+LyGcTFU+D0AUT93iaOmEsE3LEmA25Yk4GlCPgBNAiU+A+RyYoAAAAASUVORK5CYII=" InformativeScreenshot="b8a058663a49375faf6cc24e6aa44eb4.png" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmLogin' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Option number'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="560,227" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="c9cc0c71-62c2-47f7-b8c2-5b9ae20174ed" Text="2" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="100, 139, 65, 20" ElementType="InputBox" FriendlyName="'Option number'" FullSelectorArgument="&lt;wnd ctrlname='txtOption' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='txtOption' /&gt;" Guid="5759629c-e567-4375-8cae-c3dbcad2976f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEUAAAAYCAYAAACsnTAAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACYSURBVFhH7dCxDcIwFEVRL8BaaSwaVkjBdsyQAahS2QVdmkjewMUPhir2FQzw35WeFFtpfMI704bhpfd9P2KMllKyUoq7tXdP19uIknO2Wqt5rL37uaYRpYl57rXtv1Ha2VtCgYQCCQUSCiQUSCiQUCChQEKBhAIJBRIK9BfFY0KBECXcF61HucwP/tHJPu/vUbTT8NLxgh0Jo21e/DxY2gAAAABJRU5ErkJggg==" InformativeScreenshot="602eddefabbee93bb73825be605a073e.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmMenu' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="15, 146, 79, 13" ElementType="Text" FriendlyName="'Option number'" FullSelectorArgument="&lt;wnd ctrlname='Label4' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='Label4' check:text='Option number:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAARCAYAAAChIpBnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGrSURBVFhH7VbBbcQgEHQhriK/NOAa3EA+V0NqSDNpJsVEIjuIdQYYY2ydLheJk0Ysw8COF4xvsl8YuBskOXANkhy4BkkOXIMkw/w2hdv3FN6Bryksr1r3b2D+b/Ycsxq7HwRphUQRX7yAMGL9ZkHZ7GOMn8NjPNXkok4iCvxZcIxnLCDjT4qJpDiVe3wytRr8CoAWG+D9mY1bXGr9wRbbnMgbVtusKp/S8Nqk85xr0t8+fufyPB/fvKQ12GM8SIUe2jW1mc8cBZEWUTsYF8O4tX5yZzMdTyzPoxhF9kJlWltjK6C1Vc49DedxnfPuq4xpvPJicfYmFvrF8/ehINIi1Q4478mY9+TOK66H977ijuYyr+LWPHuueCoJKGKm70NNNu/MlinnFdfDe19xR3OZV3FrnhVPHh7W90GQKBwS2ILo+9+k6hXC2NXXnI2WfcVRH9fNlt9PEOtVjFb5tjh6tH6Wh9fohyT3/2emJHxhe0KY8k3gh6m0pdGyf6CJhUje8IGIPOtVjNb0iEvf0Ox9gDaN4fwH6AgiycAGSe5jFLMFSQ5cgyQHTmMKP7G7npkfUGH5AAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Go'" sap:VirtualizedContainerService.HintSize="560,166" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c9cc0c71-62c2-47f7-b8c2-5b9ae20174ed" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="182, 137, 99, 23" ElementType="Button" FriendlyName="'Go'" FullSelectorArgument="&lt;wnd ctrlname='Button2' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='Button2' check:text='Go' /&gt;" Guid="e1a386af-19a8-450c-a7a8-d4ca257a9d77" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGcAAAAbCAYAAABhoZFDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFASURBVGhD7drNDYJAEIZhCrEKbzZADTTghRLUGjwCfdiMnfib4AxC2F0HWcTIsH4mT8RlD8ibxZ8Q0aMEtcRB0OG5sbuDl5u/7bXD5dXm3EKcTwkRJGIU1hPmbRxjB/wY4iiGOIoNilMUBTjyPB8lyzKLeb4HxzFfw3cFGWexjsq0Pl6WHmhMmKddeHE4zDEql6t2bLGnY6dA1rwZCC5OTGFiI8yciXFO1pznxiziUBReNW8vYTQnoTnV++EVJs1RIuw4dIlrjptD8DivrITGeb/2y91/rJxm3N3fNV+JsOIQ8TMHcZRwv63Rc8LHXkfAZW1i1u8cihHXwaoVwrFou9mnddWwIOOEYnQcsEn/l/niGC7zfA+KA7+FOIohjmK9caCHcL+AS7x3gHncP4A4YwgxXGIY9mkcUEkchMlF5QMEwiXNcL6vXgAAAABJRU5ErkJggg==" InformativeScreenshot="5edadd17e42b1a30ef6f49e05e9ceda9.png" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmMenu' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="560,1154" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="478,1024" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'Retrieve Order'" sap:VirtualizedContainerService.HintSize="436,166" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c9cc0c71-62c2-47f7-b8c2-5b9ae20174ed" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="18, 69, 188, 23" ElementType="Button" FriendlyName="'Retrieve Order'" FullSelectorArgument="&lt;wnd ctrlname='Button1' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='Button1' check:text='Retrieve Order' /&gt;" Guid="c8ce75bc-cdb8-45ff-98bd-a80613fe56f3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMAAAAAbCAYAAAAqJYDrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMfSURBVHhe7Zu7btRAFIbnDdLDPkU6XiANVaBZ0iKaBQlSQcGlooNw6VGeAdEgEDdFKD1Q8AJILIEGhBB70XB+r8/ozOyMly2izdp/pE/xOXOOPdb+v8dO1k5+PCEdJpskpCtkk4R0hSSxcdq7nX3vdg+9u/GJkBPAx+W5/iFm+9FM26neowAFIvw7L4f+x++xn06nhKycyWSyNOPxOHD066+//27o3dX3OROY4Pxj/+Dge3YShKyCnLgXYcVvufX8i3cXnljxAxPIcqNX/ihPyJoDA3z7+We2CsRjJhADqPOiPCFrDgwwGo1mzwPxmAloANJSaADLGecHE+dvJvQvZWpPAD2ZV5jvZ+e3ZP65ugico9T2cmMdhAawZMRRiaxJMCVBHbfQZF4Q/qaKHseTeKEJjnteawYNYCmIow+hJbnAigS1JcecEztM8SzJpdAAETSAJSOOaAWQ8b5s21sOCFHjXt3fFxGGXKEP+4axgojRK3FltEJ9wNbm8vgtfToPxLo/5Bvnlfamx2gZNIAFHz7EYBEx6G1GdNWthaKiV0FVtyFimjBe6pPtTRHZYG+W78lvvXqX6qu4lKupViuM6zwkh/3pcwwMrQYono/pbTs0gCUVlsRBPLUwInPUQgk9tl+3S32St/VBjE31Zl6oWbQCzM3JxnXt3HHs+XQAGsCSigXgiokrcy2YrOhyYtPtUl+NCj/qa6hXoqu3YueazkNrNC4dJ61vOTSApfDh60NwtRrUtyyRkLSnsJ3tw7aAWx/EeisEmuoDEDvmJeOI9U+i6cqCsWp/Ml7VyX7tLVDj+XQAGsBS+PAhFBVW7uEU4yrG0J9sFx9qUafCNbnGh+Ca4v8BsE+Jw3kgrusGeO7Qsdxx0t6WQwOQTkMDkE7zfwbYPeS3QUkrgQGqb4M2GmBn399+MQyrACGrJPdd/yYg8hK4+t97+9W77YdW/MAEG6eqVWDv4IhvhJGVkxN5EznhA7wRVr0Mcw1vhInGreaTYFZw9q53V954d/k1ISvk1XIMClx86t05vBM8J34wlyCkS2SThHSFbJKQDuD8P8XeZBGBieifAAAAAElFTkSuQmCC" InformativeScreenshot="66dac325c9b7c75da47c4aee1c832cd2.png" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmViewOrder' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NGetText DisplayName="Get Text 'CD-88'" sap:VirtualizedContainerService.HintSize="436,166" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="c9cc0c71-62c2-47f7-b8c2-5b9ae20174ed" Version="V1">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="92, 115, 37, 13" ElementType="Text" FriendlyName="'CD-88'" FullSelectorArgument="&lt;wnd ctrlname='lblProductCode' /&gt;&lt;ctrl name='CD-88' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='lblProductCode' /&gt;&lt;ctrl role='text' automationid='' /&gt;" Guid="91f478e6-f471-44d3-97ff-9e6aefb4cc3e" ImageBase64="" InformativeScreenshot="663ae401139e73926b33dc048982eae9.png" ScopeSelectorArgument="&lt;wnd app='trainingordersystem.exe' ctrlname='frmViewOrder' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+                    </uix:NGetText.Target>
+                    <uix:NGetText.Text>
+                      <OutArgument x:TypeArguments="x:String">[pCode]</OutArgument>
+                    </uix:NGetText.Text>
+                  </uix:NGetText>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,275" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,187" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="358,97" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[pCode]" />
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                  </ui:CommentOut>
+                  <Assign sap:VirtualizedContainerService.HintSize="436,70" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[i+1]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="436,97" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;Total Records are      &quot; +i.ToString]" />
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+              <ui:InterruptibleWhile.Condition>
+                <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="i &lt; 100000" />
+              </ui:InterruptibleWhile.Condition>
+            </ui:InterruptibleWhile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="234, 234, 209, 143" FilePath="C:\Users\ashok\Desktop\trainingordersystem.exe" IconBase64="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" InformativeScreenshot="d7052d94954147de7315973bca068fcc.png" Selector="&lt;wnd app='trainingordersystem.exe' ctrlname='frmLogin' /&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

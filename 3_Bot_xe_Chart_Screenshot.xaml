@@ -1,0 +1,137 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_3_Bot_xe_Chart_Screenshot" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="466,1053" sap2010:WorkflowViewState.IdRef="_3_Bot_xe_Chart_Screenshot_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="42">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="_3_Bot_xe_Chart_Screenshot" sap:VirtualizedContainerService.HintSize="476,988" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="CountryName">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">IND</Literal>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Free Currency Charts - Historical Currency Rates | Xe" sap:VirtualizedContainerService.HintSize="434,900" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="cee4db06-67e9-4bcf-9563-c20d2c379027" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,643" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'From'" sap:VirtualizedContainerService.HintSize="358,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cee4db06-67e9-4bcf-9563-c20d2c379027" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.xe.com/currencycharts/" DesignTimeRectangle="564, 339, 365, 38" ElementType="InputBox" FriendlyName="'INPUT midmarketFromCurr…'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='text-input__TextInput-sc-17mujrb-0 base-combobox__ComboboxInput-iyxb4f-5 dMvKLn dsBmQO combobox-input focus-visible' aaname='From' /&gt;" Guid="f6412eca-bd3b-482a-a58b-e97add7e2657" ImageBase64="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" InformativeScreenshot="c46b3b72b9e3d9fa720e5bccc69538e3.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJhM2YyYjRmMS0zMzcxLTQxMTEtYWEwZC1iNGJmMTRlYzc5NjUifQ==/*yieldify*/' title='Free Currency Charts - Historical Currency Rates | Xe' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="564, 318, 30, 18" ElementType="Text" FriendlyName="'From'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='label__Label-znf1ar-0 jTfXxu' aaname='From' check:innerText='From' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAWCAYAAAClrE55AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADySURBVEhL7ZLNDYMwDIUZgnPX6DpcObIIUvbgAGtw4MAQSEgsgCLk4kASYix+qoZy4ElPFc6L/eESwE30gFA9IFT3A2nzBMLXmziBrJkDnkVArhtMdQykEmpDqZh+Q1GrsrtFAaWqLnrlc350lNeQxeus1ikQDYBy8900JC6gNWc4vLNn43NajY9NARHphdr+RnRYbwQbKbmDlRYZ+lKlwH56CzWky96zzv01BoRp9h+Q22yE5rlv5CIQ1HQHh1gIW/8SZE/DMHg1C8IFfduAcIdXOuCKRyyl/Kk3QbgLvrwCWYewZt330osNCDecu+DHEj47Frk/7n1UvwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'GBP – British Pound'" sap:VirtualizedContainerService.HintSize="358,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cee4db06-67e9-4bcf-9563-c20d2c379027" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.xe.com/currencycharts/" DesignTimeRectangle="595, 347, 112, 20" FriendlyName="'GBP – British Pound'" FullSelectorArgument="&lt;webctrl aaname='GBP – ' parentid='midmarketFromCurrency-option-2' tag='DIV' /&gt;" FuzzySelectorArgument="[String.Format(&quot;&lt;webctrl aaname='{0}' parentid='midmarketFromCurrency-option-1' tag='DIV' type='' class='' check:innerText='GBP – British Pound' /&gt;&quot;, CountryName)]" Guid="52c9433e-3777-4f82-975f-42bf05822977" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGQAAAAUCAYAAAB7wJiVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJCSURBVGhD7Za/bsIwEMb7EMx9DV6mYkSM7AjxAAxkZMrEwoCEmBgqtrJkAQmpO4oQ4hGoomv852xfbIeEosqDh08i9vl8+X6+mLf7TwFR4SgCCUwRSGCKQAJTBBKYLCD7WRc671q91U3O3WA5oHOd9yEsz765LkwzmruRsgV89EdU85Mj9gRpP4FtXsBlk8iYK2zHI0h9+/LcCzi65lCu/cc7uLhiXyBdu3gmQDiMwRpyNXaAqTJWmK4BFZCvhtCZHZxz9ywpoSSwx+emskzTxluxUse5D1pFjYGYMQLyZHOlcS+SH8h5DT2Hgcx0YXRLIBwmdlAL1QARxS/KZ2bQlxj/1Cc6zYwOyXcwwROOQGXulAFk466T74BmmsZ/y7wCUgUYW8/zylrKejFedS7fQ9SVzn1A2Ikm3VGV47Ok4l/dIdKwyosIM9AsDUp3iAbCxtAkZajMLfKx9YZJKAuIYTiZw/X1QAhIPm7uS2OYvED46SfGezrEmCOwSj1/h1Q7RLyAfikc9wNB81V3WLmNWLUXxrB1huSeCqyMFdC/a4FY46QGO+fDT5YG5egCtcYxZ0ncR1VoVhdVCmbC094KiFzL16CpJHcdELo/6n+BlLIvdXPscYfUA2koy5DnOoSNKbOdZrQHQud0XXp/+bsOiLEOa/ACYSKfKiYFyPVZon97XwekLNKULNgHBLuAXOryxUUO+dn6K5BSuBcTMVuO8Uu8FogZX3epRwWhCCQwRSCBKQIJTBFIYIpAAlMEEpQK+AWocdVwmJeBuAAAAABJRU5ErkJggg==" InformativeScreenshot="57b9fff47e96f6590be4abd719b38abc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJhM2YyYjRmMS0zMzcxLTQxMTEtYWEwZC1iNGJmMTRlYzc5NjUifQ==/*yieldify*/' title='Free Currency Charts - Historical Currency Rates | Xe' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'View chart'" sap:VirtualizedContainerService.HintSize="358,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cee4db06-67e9-4bcf-9563-c20d2c379027" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.xe.com/currencycharts/" DesignTimeRectangle="1263, 357, 93, 36" ElementType="Button" FriendlyName="'View chart'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='button__BaseButton-sc-1qpsalo-0 clGTKJ' aaname='View chart' check:innerText='View chart' /&gt;" Guid="187906f2-8f19-427b-9ab6-d1e893e89e07" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGEAAAAoCAYAAADuUZQHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK6SURBVGhD7VtLTiMxEM1mbsGSA8zVhlyADZsRR+AQXAD2rEfKJlwg4pMNAqkVxeOy/Zwqp7o1PXG3iVRPekr7i/1elVtBzsIZmsNM+AZQTfj9+Ol+3m7dj+WrW/x6MZ5I0pH0JF01CBOeX3ah8+XNu1tc0QRmQh16Hb2epCvpSzpzCBOow8X1mzKJsRZJX9KZI5tAqRIyQBlorEvSmR9N2QRyJx5BxsnpdebZkE2IL2F7B8zD16A3kE3QOxunJGAmNCRgJjQkYCY0JGAmNCRgJjQkYCY0JFDNhOV6H+ZZPcn6uw3V7t3Dn87R15Pt+kO0T8sP90BfTD87t1TbR/Le72Hzpbf9B4F6mUALpInEIr/ciupqiTCaNU1Ie/nWJmDDbufuUJeMCdHPn0N72lRCzKBCNBhblNVseuL/mfSZd0/1mG/nVmFtBLY+z5ipANrKcXv33tFnQqWgAqq+E8ojKZaTIEJAKTbvJ8ZkYZM4oQyBGdPcx0amZ3UNvkzzlYaHSC/Ghb9zFpngqW1Ei+JSjFQOIrJnmEqgcohaJQpjPxnhkRATbbqQIhu0tQ+MPYVAXRP44nuEDmVxdBwQ+2KzXZwrfW7XXa8IUcQBE7KYUshscijztrM24XCcrDbsWKE2bkJpUMEY8fucETxS45EjKY4w0TZkwpi2sh11pxGobgIEDuCbEMLLTR6JmDMl1ZXvhpKFqYfMGBJaZpDMinM3ARvwEJF+FP1pUwkywlMbRICxQpSC4oiDocMmiIDxY7a5r2YCz8ieYBhJYAITjP9KwExoSMBMaEjATGhIwExoSMBMaEjATGhIwExoSCCbYJe/5mTP5S+7Bjkj+65B2oXg+dh7IZhA7tjV+Gk5eDWeYD8SmYpeR68n6Ur6Dv5IBKBUoc7xZa1NahxD0pH05EcQh2qCYV6YCc3h3F+bJtv5yZG3hAAAAABJRU5ErkJggg==" InformativeScreenshot="5c002b4d75e5c07473d49ed25b45b8ee.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJhM2YyYjRmMS0zMzcxLTQxMTEtYWEwZC1iNGJmMTRlYzc5NjUifQ==/*yieldify*/' title='Free Currency Charts - Historical Currency Rates | Xe' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="7cf7237a127dbc515c779e14cc744c1e.png" Selector="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJhM2YyYjRmMS0zMzcxLTQxMTEtYWEwZC1iNGJmMTRlYzc5NjUifQ==/*yieldify*/' title='Free Currency Charts - Historical Currency Rates | Xe' /&gt;" Url="https://www.xe.com/currencycharts/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
