@@ -1,0 +1,132 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Teams_Avaialble_Script" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="889,1055" sap2010:WorkflowViewState.IdRef="Teams_Avaialble_Script_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="36">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Teams_Avaialble_Script" sap:VirtualizedContainerService.HintSize="596,990" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="i">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="1" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="554,902" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+      <ui:InterruptibleWhile.Body>
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,769" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Free Currency Charts - Historical Currency Rates | Xe" sap:VirtualizedContainerService.HintSize="434,299" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="814c7c56-ca5c-4a95-a68b-3c1019f6c4b0" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,82" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="6fe8c6df820133f0cd6dff74cd5acff5.png" Selector="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJhM2YyYjRmMS0zMzcxLTQxMTEtYWEwZC1iNGJmMTRlYzc5NjUifQ==/*yieldify*/' title='Free Currency Charts - Historical Currency Rates | Xe' /&gt;" Url="https://www.xe.com/currencycharts/" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Int32">[i+1]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Current Loop is  &quot; + i.ToString]" />
+          <Delay Duration="00:04:00" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+        </Sequence>
+      </ui:InterruptibleWhile.Body>
+      <ui:InterruptibleWhile.Condition>
+        <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="i&lt;50000" />
+      </ui:InterruptibleWhile.Condition>
+    </ui:InterruptibleWhile>
+  </Sequence>
+</Activity>
